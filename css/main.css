@@ -1,0 +1,204 @@
+/*!
+ * Mobile Navigation
+ * CSS3 Stylesheet
+ * Version 1.0.0
+ * Roderic Linguri <linguri@digices.com>
+ */
+
+body {
+  background-color: #eee;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  background-color: #434b50;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#toggle {
+  position: absolute;
+  top: 5px;
+  height: 32px;
+  width: 32px;
+  background-color: #e62727;
+  background-image: url('../img/toggle.gif');
+}
+
+#menu {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  line-height: 42px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.dept-sect {
+  position: relative;
+  transition: all 0.35s ease;
+}
+
+.dept-head:hover {
+  background-color: #644448;
+}
+
+.catg-sect {
+  position: relative;
+  background-color: #843d40;
+  transition: all 0.35s ease;
+}
+
+.catg-head:hover {
+  background-color: #843d40;
+}
+
+.catg-head a {
+  padding-left: 32px;
+}
+
+.item-sect {
+  position: relative;
+  background-color: #c52e2f;
+  transition: all 0.35s ease;
+}
+
+.item-sect:hover {
+  background-color: #e62727;
+}
+
+.item-sect a {
+  padding-left: 42px;
+}
+
+.dept-disc {
+  position: absolute;
+  right: 21px;
+  top: 0px;
+  height: 32px;
+  width: 32px;
+  color: #fff;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  transition: all 0.35s ease;
+}
+
+.dept-disc:before {
+  content: "\e250"
+}
+
+.dept-disc.exp:before {
+  content: "\e252"
+}
+
+.catg-disc {
+  position: absolute;
+  right: 21px;
+  top: 0px;
+  height: 32px;
+  width: 32px;
+  color: #c52e2f;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  transition: all 0.35s ease;
+}
+
+.catg-disc:before {
+  content: "\e250"
+}
+
+.catg-disc.exp:before {
+  content: "\e252"
+}
+
+@media (max-width: 600px) {
+
+  #menu {
+    top: 42px;
+    height: 0px;
+  }
+
+  #toggle {
+    right: 21px;
+  }
+
+  .dept-sect {
+    background-color: #434b50;
+    overflow: hidden;
+  }
+
+  .catg-sect {
+    overflow: hidden;
+  }
+
+  .item-sect {
+    overflow: hidden;
+  }
+
+
+}
+
+@media (min-width: 601px) {
+
+  nav {
+    padding-left: 42px;
+  }
+
+  #menu {
+    top: 0px;
+    height: 42px;
+  }
+
+  #toggle {
+    right: -94px;
+  }
+
+  .dept-sect {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .dept-head {
+    padding: 0;
+  }
+
+  .catg-sect {
+     width: 180px;
+     overflow: hidden;
+    text-align: left;
+  }
+
+  .item-sect {
+     width: 180px;
+  }
+
+  .dept-disc {
+    position: relative;
+    padding: 12px;
+  }
+
+}
+
+#DEBUG {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    height: 100px;
+    width: 300px;
+}

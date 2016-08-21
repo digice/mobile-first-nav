@@ -1,8 +1,10 @@
-# mobile-first-nav
-An HTML5 Mobile-First Navigation Implementation
+# mobile-first-nav #
+### An HTML5 Mobile-First Navigation Implementation ###
 Version 1.0.0
 
-__Built on Digices HTML5 Boilerplate with Twitter Bootstrap and jQuery.__
+*Built on Digices HTML5 Boilerplate with Twitter Bootstrap and jQuery.*
+
+Live preview available at: [www.digices.com/previews/mobile-first-nav](https:www.digices.com/previews/mobile-first-nav)
 
 Feel free to download and customize, but make sure to retain any author credits and leave any headers intact (or add them below your own headers).
 
